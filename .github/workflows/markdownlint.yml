@@ -1,7 +1,9 @@
 name: markdownlint
 on:
- push:
- pull_request:
+  push:
+  pull_request:
+  schedule:
+    - cron: '2 2 1 * *'
 jobs:
   run_markdownlint:
     runs-on: ubuntu-latest

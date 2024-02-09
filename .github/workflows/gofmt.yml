@@ -2,6 +2,8 @@ name: gofmt
 on:
   push:
   pull_request:
+  schedule:
+    - cron: '1 1 1 * *'
 jobs:
   run_gofmt:
     runs-on: ubuntu-latest

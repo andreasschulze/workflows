@@ -1,6 +1,8 @@
 name: shellcheck
 on:
   push:
+  schedule:
+    - cron: '4 4 1 * *'
 jobs:
   run_shellcheck:
     runs-on: ubuntu-latest
